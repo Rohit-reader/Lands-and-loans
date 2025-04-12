@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <script>
+        window.onload = function () {
+        const name = localStorage.getItem("username");
+        document.getElementById("name").textContent = name;
+        const email = localStorage.getItem("useremail");
+        document.getElementById("email").textContent = email;
+        const password = localStorage.getItem("userpassword");
+        document.getElementById("password").textContent = password;
+        const number = localStorage.getItem("usernumber");
+        document.getElementById("mobilenumber").textContent = number;
+        const age = localStorage.getItem("userage");
+        document.getElementById("age").textContent = age;
+        };
+    </script>
+    <style>
+        li {
+            height: 45px;
+            list-style-type : none;
+            background-color: rgb(68, 97, 156);
+            border-radius: 20px;
+        }
+        h2 {
+            color : white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><h2>Welcome <span id="name"></span></h2></li>
+        <li><h2>Email : <span id="email"></span></h2></li>
+        <li><h2>Password : <span id="password"></span></h2></li>
+        <li><h2>Age : <span id="age"></span></h2></li>
+        <li><h2>Mobile Number : <span id="mobilenumber"></span></h2></li>
+    </ul>
+    
+    
+    
+    
+    
+
+</body>
+</html>
